@@ -10,6 +10,10 @@ const PORT = Number(process.env.PORT || 3000)
 const connectDatabase = async () => {
   return new Promise((resolve, reject) => {
     mongoose.connect(process.env.DB_URL, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useCreateIndex: true,
+      useFindAndModify: false,
       keepAlive: 300000,
       connectTimeoutMS: 30000,
     }, (err) => {
