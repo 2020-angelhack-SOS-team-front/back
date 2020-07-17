@@ -5,10 +5,6 @@ const MarketSchema = new Schema({
   address: String,
 })
 
-class Market {
-  constructor() {
-    this.model = mongoose.model('Market', MarketSchema);
-  }
-}
+const Market = mongoose.model('Market', MarketSchema);
 
 export { Market }
