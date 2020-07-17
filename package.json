@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/2020-angelhack-SOS-team-front/back/issues"
   },
-  "homepage": "https://github.com/2020-angelhack-SOS-team-front/back#readme"
+  "homepage": "https://github.com/2020-angelhack-SOS-team-front/back#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.24"
+  },
+  "devDependencies": {
+    "@shelf/jest-mongodb": "^1.2.1",
+    "jest": "^26.1.0"
+  }
 }
