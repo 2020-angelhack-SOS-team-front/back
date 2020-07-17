@@ -1,12 +1,30 @@
 import { app } from './app';
 import dotenv from 'dotenv';
+import mongoose from 'mongoose';
 
 dotenv.config()
 
 const HOST = process.env.HOST || 'localhost'
 const PORT = Number(process.env.PORT || 3000)
 
-app.listen(PORT, HOST, (err) => {
+const connectDatabase = async () => {
+  return new Promise((resolve, reject) => {
+    mongoose.connect(process.env.DB_URL, {
+      keepAlive: 300000,
+      connectTimeoutMS: 30000,
+    }, (err) => {
+      if (err) {
+        reject(err);
+      } else {
+        console.log(`successfully connect database`);
+        resolve();
+      }
+    });
+  })
+}
+
+app.listen(PORT, HOST, async (err) => {
+  await connectDatabase();
   if (err) {
     console.error(err);
   }
