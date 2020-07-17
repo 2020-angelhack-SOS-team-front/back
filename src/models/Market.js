@@ -6,8 +6,8 @@ const MarketSchema = new Schema({
 })
 
 class Market {
-  static create() {
-    return mongoose.model('Market', MarketSchema);
+  constructor() {
+    this.model = mongoose.model('Market', MarketSchema);
   }
 }
 
