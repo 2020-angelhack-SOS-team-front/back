@@ -1,7 +1,8 @@
 import { Router } from 'express';
+import market from './market';
 
 const router = Router();
 
-router.get()
+router.use('/markets', market)
 
 export default router
