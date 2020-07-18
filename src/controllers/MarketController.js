@@ -30,8 +30,9 @@ export const createMarket = async (req, res) => {
   res.json(result);
 }
 
-export const updateMarket = async () => {
-  const result = await Market.updateOne({ _id: req.params.id }, req.body).exec();
+export const updateMarket = async (req, res) => {
+  await Market.updateOne({ _id: req.params.id }, req.body).exec();
+  const result = await Market.findById(req.params.id).exec();
   res.json(result);
 }
 
