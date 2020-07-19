@@ -32,7 +32,6 @@ export const findProductByMarket = async (req, res) => {
       $regex: new RegExp(req.query.type || '.*')
     }
   }).populate('store').exec();
-  console.log(data);
   res.json({
     data: transforms(data),
   })
