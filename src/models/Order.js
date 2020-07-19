@@ -1,7 +1,13 @@
-import mongoose from 'mongoose';
+import mongoose, { Schema } from 'mongoose';
 
-const OrderSchema = mongoose.Schema({});
+const OrderSchema = mongoose.Schema({
+  items: [{
+    product: { type: Schema.Types.ObjectId },
+    count: Number,
+    amount: Number,
+  }]
+});
 
 const Order = mongoose.model("Order", OrderSchema);
 
-export { Order, OrderSchema };
+export { Order, OrderItem, OrderSchema };

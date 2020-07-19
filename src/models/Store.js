@@ -1,8 +1,8 @@
-import mongoose from 'mongoose';
+import mongoose, { Schema } from 'mongoose';
 import { MarketSchema } from './Market';
 
 const StoreSchema = mongoose.Schema({
-  whatMarket: MarketSchema,
+  market: { type: Schema.Types.ObjectId, reference: 'Market' },
   name: String,
   image: String,
   description: String,
@@ -11,6 +11,6 @@ const StoreSchema = mongoose.Schema({
   isRunning: Number,
 });
 
-const Store = mongoose.model("Store", StoreSchema);
+const Store = mongoose.model('Store', StoreSchema);
 
 export { Store, StoreSchema };

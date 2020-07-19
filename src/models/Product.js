@@ -1,5 +1,4 @@
-import mongoose from 'mongoose';
-import { StoreSchema } from './Store';
+import mongoose, { Schema } from 'mongoose';
 
 const ProductType = {
   Vegetable: 'vegetable', // 채소
@@ -16,8 +15,7 @@ const ProductType = {
 Object.freeze(ProductType);
 
 const ProductSchema = mongoose.Schema({
-  whatStore: StoreSchema,
-  type: String, // ProductType이 들어가야함
+  store: { type: Schema.Types.ObjectId, reference: 'Store' },
   name: String,
   price: Number,
   image: String,
@@ -25,6 +23,6 @@ const ProductSchema = mongoose.Schema({
   type: String,
 });
 
-const Product = mongoose.model("Product", ProductSchema);
+const Product = mongoose.model('Product', ProductSchema);
 
 export { Product, ProductSchema, ProductType };
