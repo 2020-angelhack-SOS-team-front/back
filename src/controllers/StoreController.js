@@ -1,4 +1,5 @@
 import { Store } from '../models/Store';
+import { Market } from '../models/Market';
 
 export const createStore = async (req, res) => {
   const store = new Store(req.body);
@@ -16,8 +17,9 @@ export const createStore = async (req, res) => {
 
 export const findStore = async (req, res) => {
   const marketId = req.params.marketId;
+  const market = await Market.findById(marketId).exec();
   await Store.find({
-    whatMarket: marketId
+    whatMarket: market
   }, (err, result) => {
     if (err) return res.json(err);
     return res.json(result);
