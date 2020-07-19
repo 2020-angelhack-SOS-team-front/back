@@ -8,7 +8,7 @@ beforeAll(async () => {
 
 describe('import store data', () => {
   test('success import data', async () => {
-    // await Store.remove();
+    await Store.remove();
     const marketId = '5f13f0a8b175b36393bdc090';
     const data = importCsv('stores.csv');
     const stores = data.slice(1).map(storeDto => new Store({

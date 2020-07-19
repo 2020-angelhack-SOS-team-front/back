@@ -1,30 +1,46 @@
 name,price,image,description,type,store
-한우 필렛 100g,8900,,신선한 한우,meat_egg,부림 한우
-한우 필렛 500g,39000,,신선한 한우,meat_egg,부림 한우
-계란 한판,4900,,신선한 계란,meat_egg,부림 한우
-촌닭 한마리 2kg,15000,,맛있는 촌닭,meat_egg,광산 닭집
-촌닭 한마리 1.5kg,11000,,맛있는 촌닭,meat_egg,광산 닭집
-삼겹살 1kg,20000,,삼겹살,meat_egg,정직한 고기총각
-복숭아 한박스,25000,,달콤한 복숭아,fruit_nut_rice,어울림 청과
-골드키위 1kg,18000,,달콤한 키위,fruit_nut_rice,어울림 청과
-방울토마토 500g,4000,,새콤달콤 방울토마토,fruit_nut_rice,어울림 청과
-방울토마토 1kg,6900,,새콤달콤 방울토마토,fruit_nut_rice,어울림 청과
-신고 배 한박스,25000,,달콤한 배,fruit_nut_rice,어울림 청과
-자두 500g,6000,,달콤한 자두,fruit_nut_rice,풍년 청과
-자두 1Kg,9900,,달콤한 자두,fruit_nut_rice,풍년 청과
-완도 전복 500g,15000,,완도 전복,seafood,해운대끝판왕수산
-완도 전북 1kg,28000,,완도 전복,seafood,해운대끝판왕수산
-연어 필렛 500g,12000,,연어 필렛,seafood,목포 앞바다
-연어 필렛 1kg,18000,,연어 필렛,seafood,목포 앞바다
-목포 갈치 한마리,8000,,목포 갈치,seafood,해운대끝판왕수산
-문어 한마리,5000,,탱탱한 문어,seafood,목포 수산
-세발 낚지,3000,,쫄깃쫄깃 낚지,seafood,목포 수산
-고등어 한마리,3900,,신산한 고등어 ,seafood,목포 수산
-찰옥수수 1kg,7600,,찰옥수수,vegetable,중앙야채
-감자 3kg,7000,,감자,vegetable,중앙야채
-단호박 2kg,15000,,단호박,vegetable,중앙야채
-건도라지 1kg,9900,,도라지,vegetable,중앙야채
-건대추 1kg,9900,,대추,vegetable,중앙야채
-미나리 1kg,2500,,미나리,vegetable,중앙야채
-파프리카 1개,1500,,파프리카,vegetable,중앙야채
-체리 1kg,8000,http://www.homeplus.co.kr/app.product.GoodDetail.ghs?comm=usr.detail&good_id=115202614&WT.ac=Detail_ssaday_item#ui-zoomimg1,체리,vegetable,풍년 청과
+한우 필렛 100g,8900,https://cdn.pixabay.com/photo/2019/07/25/01/23/beef-4361462_1280.jpg,신선한 한우,meat_egg,부림 한우
+한우 필렛 500g,39000,https://cdn.pixabay.com/photo/2019/07/25/01/23/beef-4361462_1280.jpg,신선한 한우,meat_egg,부림 한우
+계란 한판,4900,https://cdn.pixabay.com/photo/2016/09/15/13/01/egg-1671574_1280.jpg,신선한 계란,meat_egg,부림 한우
+촌닭 한마리 2kg,15000,https://cdn.pixabay.com/photo/2017/07/20/15/21/cock-2522623_1280.jpg,맛있는 촌닭,meat_egg,광산 닭집
+촌닭 한마리 1.5kg,11000,https://cdn.pixabay.com/photo/2017/07/20/15/21/cock-2522623_1280.jpg,맛있는 촌닭,meat_egg,광산 닭집
+삼겹살 1kg,20000,https://cdn.pixabay.com/photo/2017/03/14/05/06/pork-2141994_1280.jpg,삼겹살,meat_egg,정직한 고기총각
+복숭아 한박스,25000,https://cdn.pixabay.com/photo/2017/08/11/17/41/peach-2632182_1280.jpg,달콤한 복숭아,fruit_nut_rice,어울림 청과
+골드키위 1kg,18000,https://cdn.pixabay.com/photo/2016/03/05/22/19/food-1239246_1280.jpg,달콤한 키위,fruit_nut_rice,어울림 청과
+방울토마토 500g,4000,https://cdn.pixabay.com/photo/2019/07/11/10/14/cherry-tomato-4330441_1280.jpg,새콤달콤 방울토마토,fruit_nut_rice,어울림 청과
+방울토마토 1kg,6900,https://cdn.pixabay.com/photo/2019/07/11/10/14/cherry-tomato-4330441_1280.jpg,새콤달콤 방울토마토,fruit_nut_rice,어울림 청과
+신고 배 한박스,25000,https://cdn.pixabay.com/photo/2016/07/22/09/59/fruit-1534494__480.jpg,달콤한 배,fruit_nut_rice,어울림 청과
+자두 500g,6000,https://cdn.pixabay.com/photo/2019/09/11/07/25/plums-4468049_1280.jpg,달콤한 자두,fruit_nut_rice,풍년 청과
+자두 1Kg,9900,https://cdn.pixabay.com/photo/2019/09/11/07/25/plums-4468049_1280.jpg,달콤한 자두,fruit_nut_rice,풍년 청과
+완도 전복 500g,15000,https://cdn.pixabay.com/photo/2020/06/01/11/51/abalone-5246386_1280.jpg,완도 전복,seafood,해운대끝판왕수산
+완도 전북 1kg,28000,https://cdn.pixabay.com/photo/2020/06/01/11/51/abalone-5246386_1280.jpg,완도 전복,seafood,해운대끝판왕수산
+연어 필렛 500g,12000,https://cdn.pixabay.com/photo/2015/07/28/22/03/food-865102_1280.jpg,연어 필렛,seafood,목포 앞바다
+연어 필렛 1kg,18000,https://cdn.pixabay.com/photo/2015/07/28/22/03/food-865102_1280.jpg,연어 필렛,seafood,목포 앞바다
+목포 갈치 한마리,8000,https://cdn.pixabay.com/photo/2015/06/15/03/44/seafood-809861_1280.jpg,목포 갈치,seafood,해운대끝판왕수산
+문어 한마리,5000,https://cdn.pixabay.com/photo/2017/04/06/09/38/the-upper-electrode-2207783_1280.jpg,탱탱한 문어,seafood,목포 수산
+세발 낚지,3000,https://cdn.pixabay.com/photo/2015/05/12/09/31/octopus-763758_1280.jpg,쫄깃쫄깃 낚지,seafood,목포 수산
+고등어 한마리,3900,https://cdn.pixabay.com/photo/2017/07/12/20/23/pacific-saury-2498283_1280.jpg,신산한 고등어 ,seafood,목포 수산
+찰옥수수 1kg,7600,https://cdn.pixabay.com/photo/2018/09/26/21/24/sweet-corn-3705687_1280.jpg,찰옥수수,vegetable,중앙야채
+감자 3kg,7000,https://cdn.pixabay.com/photo/2014/08/06/20/32/potatoes-411975_1280.jpg,감자,vegetable,중앙야채
+단호박 2kg,15000,https://cdn.pixabay.com/photo/2015/10/13/15/36/sweet-pumpkin-986346_1280.jpg,단호박,vegetable,중앙야채
+건도라지 1kg,9900,https://cdn.pixabay.com/photo/2015/08/21/08/03/traditional-chinese-898567_1280.jpg,도라지,vegetable,중앙야채
+건대추 1kg,9900,https://cdn.pixabay.com/photo/2015/09/11/17/46/autumn-936183_1280.jpg,대추,vegetable,중앙야채
+미나리 1kg,2500,https://cdn.pixabay.com/photo/2016/04/19/08/11/wormwood-1338208_1280.jpg,미나리,vegetable,중앙야채
+파프리카 1개,1500,https://cdn.pixabay.com/photo/2014/10/22/21/54/sweet-peppers-499068_1280.jpg,파프리카,vegetable,중앙야채
+체리 1kg,8000,https://cdn.pixabay.com/photo/2016/06/18/22/36/cherries-1465801_1280.jpg,체리,vegetable,풍년 청과
+명란젓 500g,15000,https://cdn.pixabay.com/photo/2015/07/28/05/38/salted-863982_1280.jpg,명랑젓,soup_side_main,중구 반찬
+총각김치 1kg,8000,https://cdn.pixabay.com/photo/2017/08/14/15/52/bachelor-business-2640909_1280.jpg,총각김치,soup_side_main,중구 반찬
+샛나물 무침 300g,6000,https://cdn.pixabay.com/photo/2019/04/05/16/40/korean-food-4105500_1280.jpg,나물 무침,soup_side_main,중구 반찬
+골뱅이 무침 300g,8000,https://cdn.pixabay.com/photo/2014/07/27/17/51/seasoned-golbaengyi-403092_1280.jpg,무침요리,soup_side_main,중구 반찬
+찹쌀떡 500g,10000,https://cdn.pixabay.com/photo/2016/05/11/09/52/confectionery-1385402_1280.jpg,떡,beverageSnack,복있는 사람들
+송편 300g,6000,https://cdn.pixabay.com/photo/2016/03/04/02/11/hinamatsuri-1235341_1280.jpg,떡,beverageSnack,복있는 사람들
+기정떡 300g,8000,https://cdn.pixabay.com/photo/2020/02/22/08/55/the-cake-4869920_1280.jpg,떡,beverageSnack,복있는 사람들
+참기름 500g,7000,https://cdn.pixabay.com/photo/2019/02/04/02/31/sesame-3973850_1280.jpg,참기름,myeon_spice_oil,해오름 방앗간
+고추가루 1kg,15000,https://cdn.pixabay.com/photo/2019/07/11/10/15/pepper-4330445_1280.jpg,고추가루,myeon_spice_oil,해오름 방앗간
+생각가루 100g,4000,https://cdn.pixabay.com/photo/2016/05/12/16/34/ginger-1388002__480.jpg,생강가루,myeon_spice_oil,해오름 방앗간
+솜베개,25000,https://cdn.pixabay.com/photo/2015/06/24/14/42/pillows-820149_1280.jpg,베개,lifestyle,진주 배게
+솜이불,50000,https://cdn.pixabay.com/photo/2016/12/08/03/53/pillow-1890942_1280.jpg,이불,lifestyle,진주 배게
+고급 장화,30000,https://cdn.pixabay.com/photo/2017/08/10/18/59/rubber-boots-2626461__480.jpg,장화,lifestyle,진주 배게
+제주 돌하르방,15000,https://cdn.pixabay.com/photo/2017/10/15/13/54/doll-2853763__480.jpg,돌하르방,special,복있는 사람들
+무등산 수박,40000,https://cdn.pixabay.com/photo/2010/12/13/10/18/watermelon-2636__180.jpg,수박,special,풍년 청과
+진주 참외,10000,https://cdn.pixabay.com/photo/2015/06/19/04/45/melon-814438__480.jpg,참외,special,풍년 청과
