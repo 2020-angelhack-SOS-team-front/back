@@ -7,4 +7,4 @@ const MarketSchema = new Schema({
 
 const Market = mongoose.model('Market', MarketSchema);
 
-export { Market }
+export { Market, MarketSchema }
