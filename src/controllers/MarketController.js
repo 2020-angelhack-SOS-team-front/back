@@ -1,14 +1,27 @@
 import { Market } from "../models/Market";
 import axios from "axios";
 
+const transform = (market) => {
+  return {
+    _id: market._id,
+    name: market.name,
+    address: market.address,
+  }
+};
+const transforms = (markets) => markets.map(transform);
+
 export const indexMarkets = async (req, res) => {
-  res.json(await Market.find(req.params.id));
-}
+  res.json({
+    data: transforms(await Market.find()),
+  });
+};
 
 export const findMarket = async (req, res) => {
   const result = await Market.findById(req.params.id);
-  res.json(result);
-}
+  res.json({
+    data: transform(result),
+  });
+};
 
 export const findNewMarket = async (req, res, next) => {
   try {
@@ -27,16 +40,22 @@ export const findNewMarket = async (req, res, next) => {
 
 export const createMarket = async (req, res) => {
   const result = await Market.create(req.body);
-  res.json(result);
+  res.json({
+    data: transform(result),
+  });
 }
 
 export const updateMarket = async (req, res) => {
   await Market.updateOne({ _id: req.params.id }, req.body).exec();
   const result = await Market.findById(req.params.id).exec();
-  res.json(result);
+  res.json({
+    data: transform(result),
+  });
 }
 
 export const deleteMarket = async (req, res) => {
   const result = await Market.deleteOne({ _id: req.params.id }).exec();
-  res.json(result);
-}
+  res.json({
+    data: result,
+  });
+};
