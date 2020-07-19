@@ -7,11 +7,11 @@ const router = Router({ mergeParams: true });
 
 router.get('', MarketController.indexMarkets)
 router.post('', MarketController.createMarket)
-router.get('/:id', MarketController.findMarket)
-router.put('/:id', MarketController.updateMarket)
-router.delete('/:id', MarketController.deleteMarket)
-router.get("/products", ProductController.findProductByMarket);
+router.get('/:marketId', MarketController.findMarket)
+router.put('/:marketId', MarketController.updateMarket)
+router.delete('/:marketId', MarketController.deleteMarket)
+router.get("/:marketId/products", ProductController.findProductByMarket);
 
-router.use('/:id/stores', StoreRouter)
+router.use('/:marketId/stores', StoreRouter)
 
 export default router
