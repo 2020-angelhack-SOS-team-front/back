@@ -1,10 +1,4 @@
-const { Store } = require("../models/Store.js");
-const bodyParser = require("body-parser");
-const mongoose = require("mongoose");
-const express = require("express");
-
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+import { Store } from '../models/Store';
 
 export const createStore = async (req, res) => {
   const store = await new Store(req.body);
