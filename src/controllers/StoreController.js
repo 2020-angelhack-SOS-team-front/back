@@ -1,5 +1,15 @@
 import { Store } from '../models/Store';
-import { Market } from '../models/Market';
+
+const transform = (store) => ({
+  _id: store._id,
+  name: store.name,
+  image: store.image,
+  description: store.description,
+  tel: store.tel,
+  isRunning: store.isRunning,
+})
+
+const transforms = (stores) => stores.map(transform);
 
 export const createStore = async (req, res) => {
   const store = new Store(req.body);
@@ -15,14 +25,18 @@ export const createStore = async (req, res) => {
   });
 };
 
+export const indexStoresByMarket = async (req, res) => {
+  const data = await Store.find({ market: req.params.marketId }).exec();
+  console.log(data, req.params.marketId);
+  res.json({
+    data: transforms(data),
+  });
+};
+
 export const findStore = async (req, res) => {
-  const marketId = req.params.marketId;
-  const market = await Market.findById(marketId).exec();
-  await Store.find({
-    whatMarket: market
-  }, (err, result) => {
-    if (err) return res.json(err);
-    return res.json(result);
+  const data = await Store.find({ market: marketId }).exec();
+  res.json({
+    data: transforms(data),
   });
 };
 
