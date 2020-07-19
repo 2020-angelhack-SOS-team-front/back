@@ -1,8 +1,14 @@
 import { Router } from 'express';
-import { MarketController } from '../controllers/MarketController';
+import * as StoreController from '../controllers/StoreController';
+import ProductRouter from './product';
 
-const router = Router();
+const router = Router({ mergeParams: true });
 
-// TODO: create store router
+router.post('', StoreController.createStore);
+router.get('', StoreController.findStore);
+router.put('/:storeId', StoreController.updateStore);
+router.delete('/:storeId', StoreController.deleteStore);
+
+router.use('/products', ProductRouter);
 
 export default router
