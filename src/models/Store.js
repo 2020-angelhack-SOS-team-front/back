@@ -2,7 +2,7 @@ import mongoose, { Schema } from 'mongoose';
 import { MarketSchema } from './Market';
 
 const StoreSchema = mongoose.Schema({
-  market: { type: Schema.Types.ObjectId, reference: 'Market' },
+  market: { type: Schema.Types.ObjectId, ref: 'Market' },
   name: String,
   image: String,
   description: String,

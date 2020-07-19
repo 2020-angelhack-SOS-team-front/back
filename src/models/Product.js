@@ -15,7 +15,7 @@ const ProductType = {
 Object.freeze(ProductType);
 
 const ProductSchema = mongoose.Schema({
-  store: { type: Schema.Types.ObjectId, reference: 'Store' },
+  store: { type: Schema.Types.ObjectId, ref: 'Store' },
   name: String,
   price: Number,
   image: String,

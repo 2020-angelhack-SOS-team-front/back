@@ -1,6 +1,6 @@
 import { Store } from '../models/Store';
 
-const transform = (store) => ({
+export const transform = (store) => ({
   _id: store._id,
   name: store.name,
   image: store.image,
