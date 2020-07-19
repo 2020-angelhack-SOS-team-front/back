@@ -1,8 +1,10 @@
 import { Router } from 'express';
-import market from './market';
+import MarketRouter from './market';
+import OrderRouter from './order';
 
 const router = Router();
 
-router.use('/markets', market)
+router.use('/markets', MarketRouter);
+router.use('/orders', OrderRouter);
 
 export default router
