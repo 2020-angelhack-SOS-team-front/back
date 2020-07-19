@@ -12,7 +12,7 @@ const UserSchema = mongoose.Schema({
       minlength: 5,
    },
    image: String,
-   roel: Number,
+   role: Number,
 });
 
 const User = mongoose.model("User", UserSchema);
