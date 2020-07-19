@@ -24,7 +24,14 @@ export const createProduct = async (req, res) => {
 
 export const findProductByMarket = async (req, res) => {
   const stores = await Store.find({ market: req.params.marketId }).exec();
-  const data = await Product.find({ store: { $in: stores.map(store => store._id) } }).populate('store').exec();
+  const data = await Product.find({
+    store: {
+      $in: stores.map(store => store._id)
+    },
+    type: {
+      $regex: new RegExp(req.query.type || '.*')
+    }
+  }).populate('store').exec();
   console.log(data);
   res.json({
     data: transforms(data),
@@ -58,7 +65,7 @@ export const deleteProduct = async (req, res) => {
 };
 
 export const findProductByStore = async (req, res) => {
-  const products = await Product.find({ store: req.params.storeId }).exec();
+  const products = await Product.find({ store: req.params.storeId, type: { $regex: new RegExp(req.query.type || '.*') } }).exec();
   res.json({
     data: transforms(products),
   });
