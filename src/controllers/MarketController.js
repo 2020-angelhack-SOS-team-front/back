@@ -11,8 +11,11 @@ const transform = (market) => {
 const transforms = (markets) => markets.map(transform);
 
 export const indexMarkets = async (req, res) => {
+  const findOptions = {};
+  findOptions.address = { $regex: new RegExp(req.query.address_contain || '.*') }
+  const markets = await Market.find(findOptions).limit(30).exec();
   res.json({
-    data: transforms(await Market.find()),
+    data: transforms(markets),
   });
 };
 
