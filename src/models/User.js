@@ -1,7 +1,6 @@
-const express = require("express");
-const mongoose = require("mongoose");
+import mongoose from 'mongoose';
 
-const userSchema = mongoose.Schema({
+const UserSchema = mongoose.Schema({
    name: String,
    email: {
       type: String,
@@ -16,6 +15,6 @@ const userSchema = mongoose.Schema({
    roel: Number,
 });
 
-const User = mongoose.model("User", userSchema);
+const User = mongoose.model("User", UserSchema);
 
-module.exports = { User };
+export { User };
