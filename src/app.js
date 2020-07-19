@@ -6,7 +6,7 @@ import cors from 'cors';
 const app = express();
 
 app.use(bodyParser.json());
-app.use(cors({ origin: false }));
+app.use(cors({ origin: '*' }));
 
 app.use(routes)
 
