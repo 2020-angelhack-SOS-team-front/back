@@ -1,8 +1,8 @@
 import mongoose from 'mongoose';
-import { marketSchema } from './marketModel';
+import { MarketSchema } from './Market';
 
 const StoreSchema = mongoose.Schema({
-  whatMarket: marketSchema,
+  whatMarket: MarketSchema,
   name: String,
   image: String,
   description: String,

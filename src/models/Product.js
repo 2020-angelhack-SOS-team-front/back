@@ -1,8 +1,8 @@
 import mongoose from 'mongoose';
-import { storeSchema } from './storeModel';
+import { StoreSchema } from './Store';
 
 const ProductSchema = mongoose.Schema({
-  whatStore: storeSchema,
+  whatStore: StoreSchema,
   name: String,
   price: Number,
   image: String,
@@ -10,6 +10,6 @@ const ProductSchema = mongoose.Schema({
   type: String,
 });
 
-const Product = mongoose.Model("Product", ProductSchema);
+const Product = mongoose.model("Product", ProductSchema);
 
 export { Product, ProductSchema };
