@@ -9,6 +9,6 @@ router.get('', StoreController.findStore);
 router.put('/:storeId', StoreController.updateStore);
 router.delete('/:storeId', StoreController.deleteStore);
 
-router.use('/products', ProductRouter);
+router.use('/:storeId/products', ProductRouter);
 
 export default router
