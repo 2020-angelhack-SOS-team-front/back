@@ -20,7 +20,7 @@ export const indexMarkets = async (req, res) => {
 };
 
 export const findMarket = async (req, res) => {
-  const result = await Market.findById(req.params.id);
+  const result = await Market.findById(req.params.marketId);
   res.json({
     data: transform(result),
   });
@@ -49,7 +49,7 @@ export const createMarket = async (req, res) => {
 }
 
 export const updateMarket = async (req, res) => {
-  await Market.updateOne({ _id: req.params.id }, req.body).exec();
+  await Market.updateOne({ _id: req.params.marketId }, req.body).exec();
   const result = await Market.findById(req.params.id).exec();
   res.json({
     data: transform(result),
@@ -57,7 +57,7 @@ export const updateMarket = async (req, res) => {
 }
 
 export const deleteMarket = async (req, res) => {
-  const result = await Market.deleteOne({ _id: req.params.id }).exec();
+  const result = await Market.deleteOne({ _id: req.params.marketId }).exec();
   res.json({
     data: result,
   });
