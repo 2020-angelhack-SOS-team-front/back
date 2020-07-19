@@ -1,4 +1,6 @@
 import { Product } from '../models/Product';
+import { Market } from '../models/Market';
+import { Store } from '../models/Store';
 
 export const createProduct = async (req, res) => {
   const product = new Product(req.body);
@@ -15,8 +17,10 @@ export const createProduct = async (req, res) => {
 };
 //여기 문제 있어요..
 export const findProductByMarket = async (req, res) => {
+  const market = await Market.findById(req.params.marketId).exec();
+  const stores = await Store.find({ whatMarket: market }).exec();
   await Product.find({
-    whatMarket: req.params.marketId
+    whatMarket: { $in: stores},
   }, (err, result) => {
     if (err) return res.json(err);
     return res.json(result);
